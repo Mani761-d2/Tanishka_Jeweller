@@ -1,1 +1,14 @@
+body{
+margin:0;
+padding:0;
+background:#f5f5f5;
+font-family:Arial,sans-serif;
+text-align:center;
+}
 
+.banner{
+width:100%;
+max-width:500px;
+display:block;
+margin:auto;
+}
