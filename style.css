@@ -15,19 +15,33 @@ margin:auto;
 h1{
 color:#b8860b;
 }
-.gallery{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:20px;
-padding:20px;
+html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
 
-.gallery img{
-width:95%;
-max-width:500px;
-height:70vh;
-object-fit:cover;
-border-radius:15px;
-box-shadow:0 4px 10px rgba(0,0,0,.2);
+.gallery{
+    height:100vh;
+    overflow-y:scroll;
+    scroll-snap-type:y mandatory;
+    scroll-behavior:smooth;
+}
+
+.gallery::-webkit-scrollbar{
+    display:none;
+}
+
+.slide{
+    height:100vh;
+    width:100%;
+    scroll-snap-align:start;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
